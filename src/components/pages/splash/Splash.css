@@ -1,0 +1,51 @@
+.logo_wrapper {
+  height: 100vh;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen {
+  margin-top: -10%;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 100%;
+  animation: grow 5.5s forwards;
+}
+
+
+@keyframes grow {
+  0% {
+    transform: scale(0);
+  }
+  10% {
+    transform: scale(1);
+    border-radius: 0%;
+    height: 100%;
+    width: 100%;
+  }
+  90% {
+    transform: scale(1);
+    border-radius: 0%;
+    height: 100%;
+    width: 100%;
+  }
+  100% {
+    transform: scale(0);
+    transform-origin: 50% 50%;
+    border-radius: 100%;
+  }
+}
+
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
