@@ -13,7 +13,6 @@ import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 
 function App() {
-    const LOCAL_STORAGE_KEY = "contacts";
     const [contacts, setContacts] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
     const [searchResults, setSearchResults] = useState([]);
@@ -116,8 +115,6 @@ function App() {
                 }
             })
 
-        // setContacts(contacts.map((contact) => {     return contact.id === id
-        // ? {             ...response.data         }         : contact; }));
     };
 
     const removeContactHandler = async (id) => {
@@ -162,12 +159,12 @@ function App() {
     };
 
     const searchHandler = (searchTerm) => {
-        // console.log(searchTerm);
+      
         setSearchTerm(searchTerm);
 
         if (searchTerm !== "") {
             const newContactList = contacts.filter((contact) => {
-                // console.log(Object.values(contact).join(""));
+              
                 return Object
                     .values(contact)
                     .join("")
@@ -182,9 +179,7 @@ function App() {
     };
 
     useEffect(() => {
-        // const retriveContacts = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
-        // if (retriveContacts) setContacts(retriveContacts);
-
+        
         const getAllContacts = async () => {
             const allContacts = await retriveContacts();
             if (allContacts) 
@@ -193,9 +188,6 @@ function App() {
         
         getAllContacts();
     }, []);
-
-    // useEffect(() => {   localStorage.setItem(LOCAL_STORAGE_KEY,
-    // JSON.stringify(contacts)); }, [contacts]);
 
     return (
         <div className="ui container">
