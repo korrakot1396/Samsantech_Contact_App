@@ -6,20 +6,23 @@
 | Tiger    | Korrakot Triwichian | korrakot1396    |
 
 ## Project installation process
-1. Clone this project from github 
-2. Run command in terminal git clone https://github.com/korrakot1396/Basic-Web-Development-Assessment-by-Tiger.git
+1. Clone this project from github
+2. Run command in terminal git clone https://github.com/korrakot1396/Samsantech_Contact_App.git
 3. Open vs code and open this project
-4. Installation Live server for run this project
-5. Right click at file index.html and you can see open with live server
-6. Website ready!
+4. Run command 'npm install' for installation this project
+5. Change Directory or cd to folder server-api 
+6. Run Debugging mode in package.json file or run command 'json-server -p 3006 -w db.json' for run json-server
+7. Back to root directory in this project 
+8. Run command 'npm start' for run website
+9. Website ready!
 
 ## Functionality 
-1. Add product to cart
-2. Carousel can be used
-3. Display the product using flexbox
-4. Modal can show the list of items added 
-5. Display product comming from json
-6. Without framework, bootstrap or other
+1. CRUD contact such as create, update, delete and view
+2. Search Filter contact
+3. Validation Input such as email format etc
+4. React-Router for link my pages
+5. Display contact comming from json-server
+6. Loader and Splash for website run GIF animation.
 
  ## Responsive Design
  :heavy_check_mark:  Moto G4 <br/>
@@ -39,6 +42,3 @@
  :heavy_check_mark:  Galaxy Fold <br/>
  :heavy_check_mark:  Nest Hub <br/>
  :heavy_check_mark: Nest Hub Max 
- 
- ## Demo website
- https://sample-site-app-e900b.web.app
