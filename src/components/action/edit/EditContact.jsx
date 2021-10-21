@@ -68,7 +68,7 @@ class EditContact extends Component {
                 <br/>
                 <div className="card-form">
                     <form onSubmit={this.handleUpdate}>
-                        <h2>Add Contact</h2>
+                        <h2>Edit Contact</h2>
                         <br/>
                         <div class="row">
                             <label for="name">Name</label>
