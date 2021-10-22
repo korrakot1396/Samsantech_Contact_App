@@ -56,3 +56,13 @@ json-server -p 3006 -w db.json
 
 ## Demo App
 ![](https://github.com/korrakot1396/Samsantech_Contact_App/blob/main/src/images/demo/demo_1.PNG)
+
+![](https://github.com/korrakot1396/Samsantech_Contact_App/blob/main/src/images/demo/demo_2.PNG)
+
+![](https://github.com/korrakot1396/Samsantech_Contact_App/blob/main/src/images/demo/demo_3.PNG)
+
+![](https://github.com/korrakot1396/Samsantech_Contact_App/blob/main/src/images/demo/demo_4.PNG)
+
+![](https://github.com/korrakot1396/Samsantech_Contact_App/blob/main/src/images/demo/demo_5.PNG)
+
+![](https://github.com/korrakot1396/Samsantech_Contact_App/blob/main/src/images/demo/demo_6.PNG)
