@@ -2,11 +2,13 @@ import React, { Component } from "react";
 import Swal from 'sweetalert2'
 import "../../form/FormInput.css";
 
+
+
 class EditContact extends Component {
   constructor(props) {
     super(props);
 
-    const { id, name, email, image, detail, contact } = props.location.state.contact;
+    const { id, name, email, image, detail, contact, job } = props.location.state.contact;
     this.state = {
       id, // id: id
       name,
@@ -14,6 +16,7 @@ class EditContact extends Component {
       image, 
       detail,
       contact,
+      job,
     };
   }
 
@@ -21,7 +24,7 @@ class EditContact extends Component {
     e.preventDefault();
 
       // check case empty input
-      if (this.state.name === "" || this.state.email === "" || this.state.image === "" || this.state.contact === "" || this.state.detail === "") {
+      if (this.state.name === "" || this.state.email === "" || this.state.image === "" || this.state.contact === "" || this.state.detail === "" || this.state.job === "") {
         Swal.fire(
             {icon: 'error', title: 'Oops...', text: 'Please fill out all fields.!'}
         )
@@ -49,7 +52,7 @@ class EditContact extends Component {
 
     // check case validate url of image
     function checkURL(url) {
-        return (url.match(/\.(jpeg|jpg|gif|png)$/) != null);
+        return (url.match(/\.(jpeg|jpg|gif|png|svg)$/) != null);
     }
     if (checkURL(this.state.image) === false) {
         Swal.fire({icon: 'error', title: 'Oops...', text: 'URL of image wrong.!'})
@@ -58,7 +61,7 @@ class EditContact extends Component {
 
 
     this.props.updateContactHandler(this.state);
-    this.setState({name: "", email: "", image: "", contact: "", detail: ""});
+    this.setState({name: "", email: "", image: "", contact: "", detail: "", job: ""});
     this.props.history.push("/home");
   };
 
@@ -68,8 +71,18 @@ class EditContact extends Component {
                 <br/>
                 <div className="card-form">
                     <form onSubmit={this.handleUpdate}>
-                        <h2>Add Contact</h2>
+                        <h2>Edit Contact</h2>
                         <br/>
+                        <div class="row">
+                            <label for="name">UUID</label>
+                            <input
+                                type="text"
+                                name="uuid"
+                                placeholder="UUID"
+                                value={this.state.id}
+                                onChange={(e) => this.setState({id: e.target.value})}
+                                disabled/>
+                        </div>
                         <div class="row">
                             <label for="name">Name</label>
                             <input
@@ -107,6 +120,15 @@ class EditContact extends Component {
                                 onChange={(e) => this.setState({image: e.target.value})}/>
                         </div>
                         <div class="row">
+                            <label for="image">Job</label>
+                            <textarea
+                                type="text"
+                                name="job"
+                                placeholder="Job"
+                                value={this.state.job}
+                                onChange={(e) => this.setState({job: e.target.value})}/>
+                        </div>
+                        <div class="row">
                             <label for="image">Detail</label>
                             <textarea
                                 type="text"
@@ -126,3 +148,7 @@ class EditContact extends Component {
 }
 
 export default EditContact;
+
+
+
+

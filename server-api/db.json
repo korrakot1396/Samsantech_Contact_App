@@ -6,7 +6,8 @@
       "email": "nam.dosan@samsantech.com",
       "image": "https://i.pinimg.com/564x/af/1f/e9/af1fe9b5cdd9418cd841ab72f9c2245d.jpg",
       "detail": "Dosan is a software developer for samsantech.",
-      "contact": "0987654321"
+      "contact": "0987654321",
+      "job": "Software Engineer"
     },
     {
       "id": "408a1fb7-ad5b-4500-a39a-1ca71d841c5e",
@@ -14,23 +15,26 @@
       "email": "so.dalmi@samsantech.com",
       "image": "https://i.pinimg.com/564x/42/d9/8b/42d98b9c4904a05b8b5b46d779931643.jpg",
       "detail": "Dalmi is the executive of my company.",
-      "contact": "0987654321"
+      "contact": "0987654321",
+      "job": "CEO"
     },
     {
       "id": "0de25fc4-4cc3-4da1-a6b5-e817e7b366f0",
       "name": "Lee Cheolsan",
       "email": "lee.cheolsan@samsantech.com",
       "image": "https://images.workpointnews.com/workpointnews/2020/10/27173825/1603795101_92767_Start-up_14.jpg",
+      "detail": "Lee Cheolsan is a software developer for samsantech.",
       "contact": "0988767876",
-      "detail": "Lee Cheolsan is a software developer for samsantech."
+      "job": "Frontend Developer"
     },
     {
       "id": "6b24c2dd-d60f-4059-b0f8-b27d752771fa",
       "name": "Kim Yongsan",
       "email": "kim.yongsan@samsantech.com",
       "image": "https://artisan.co.th/wp-content/uploads/2020/12/123146552_673273216915086_7916283143421506944_n-2048x1365.jpg",
+      "detail": "Kim Yongsan is a software developer for samsantech.",
       "contact": "0987654321",
-      "detail": "Kim Yongsan is a software developer for samsantech."
+      "job": "Backend Developer"
     },
     {
       "id": "3cb6a405-e838-405e-805b-02c9f25eb58c",
@@ -38,15 +42,17 @@
       "email": "won.injae@samsantech.com",
       "image": "https://0.soompi.io/wp-content/uploads/2020/10/15095658/Kang-Han-Na2.jpeg",
       "detail": "Won In Jae is Marketing Manager for samsantech.",
-      "contact": "989887653"
+      "contact": "989887653",
+      "job": "Marketing Manager"
     },
     {
       "id": "308bd4b5-d8d6-416c-ac57-9bb7b4742d01",
       "name": "Jung Sa Ha",
       "email": "jung.saha@samsantech.com",
       "image": "https://thematter.co/wp-content/uploads/2020/12/5EE8B7F3-AC6C-4A20-A423-F624815B8526.jpeg",
+      "detail": "Jung Sa Ha is UX/UI Designer for samsantech.",
       "contact": "0909876864",
-      "detail": "Jung Sa Ha is UX/UI Designer for samsantech."
+      "job": "UX/UI Designer"
     }
   ]
 }

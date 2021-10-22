@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import ContactCard from "../card/ContactCard";
 
 
-const ContactList = (props) => {
-  // console.log(props);
+function ContactList(props) {
+ 
   const inputElement = useRef("");
 
   const deleteContactHandler = (id) => {
@@ -40,7 +40,6 @@ const ContactList = (props) => {
             type="text"
             placeholder="Search Contacts"
             className="prompt"
-            // style={{ width: "50em" }}
             value={props.term}
             onChange={getSearchHandler}
           />

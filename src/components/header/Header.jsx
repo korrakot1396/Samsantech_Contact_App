@@ -8,10 +8,7 @@ function Header() {
 			<div>
 				<header className="header">
 					<NavLink to="/splash" tag={Link} className="logo">
-						{/* <span className="grey-color"> &lt;</span>
-						<span className="logo-name">Samsantech</span>
-						<span className="grey-color">/&gt;</span> */}
-						 <img src={logo} width={60} height={40} />
+						 <img src={logo} width={50} height={40} alt="logo" />
 					</NavLink>
 					<input className="menu-btn" type="checkbox" id="menu-btn" />
 					<label className="menu-icon" htmlFor="menu-btn">

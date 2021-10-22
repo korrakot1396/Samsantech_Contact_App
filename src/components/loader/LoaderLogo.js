@@ -10,7 +10,7 @@ return (
   <GifLoader
       loading={true}
       imageSrc="https://i.imgur.com/Am0rbSB.gif"
-      imageStyle={{width: "100vh"},{ height: "100vh"}}
+      imageStyle={{width: "100vh"} , { height: "100vh"}}
       overlayBackground="rgba(0,0,0,0.5)"
   />
 );

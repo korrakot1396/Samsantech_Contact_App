@@ -22,7 +22,7 @@
 .mask {
   clip: rect(0px, 460px, 220px, 0px);
   border-radius: 4px;
-  position: absolute;
+  position: relative;
 }
 
 .blog-card-image {

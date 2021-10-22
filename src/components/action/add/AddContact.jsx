@@ -2,6 +2,8 @@ import React, {Component} from "react";
 import Swal from 'sweetalert2'
 import "../../form/FormInput.css";
 
+
+
 class AddContact extends Component {
     state = {
         name: "",
@@ -9,25 +11,34 @@ class AddContact extends Component {
         image: "",
         contact: "",
         detail: "",
+        job: "",
     };
 
     handleSubmit = (e) => {
         e.preventDefault();
 
         // check case empty input
-        if (this.state.name === "" || this.state.email === "" || this.state.image === "" || this.state.contact === "" || this.state.detail === "") {
+        if (this.state.name === "" || this.state.email === "" || this.state.image === "" || this.state.contact === "" || this.state.detail === "" || this.state.job === "") {
             Swal.fire(
                 {icon: 'error', title: 'Oops...', text: 'Please fill out all fields.!'}
             )
             return;
         }
 
-        //check case lenght of name
+        //check case too long name
         if(this.state.name.length >= 25){
           Swal.fire(
-            {icon: 'error', title: 'Oops...', text: 'Error your name out of length. Your name cannot exceed 25 characters.!'}
+            {icon: 'error', title: 'Oops...', text: 'Error your name too long. Your name cannot exceed 25 characters.!'}
         )
         return;
+        }
+
+        //check case too little name
+        if(this.state.name.length <= 3){
+            Swal.fire(
+              {icon: 'error', title: 'Oops...', text: 'Error your name too little. You must enter your name with 3 or more characters..!'}
+          )
+          return;
         }
 
         // check case validate wrog format of email
@@ -43,12 +54,13 @@ class AddContact extends Component {
 
         // check case validate url of image
         function checkURL(url) {
-            return (url.match(/\.(jpeg|jpg|gif|png)$/) != null);
+            return (url.match(/\.(jpeg|jpg|gif|png|svg)$/) != null);
         }
         if (checkURL(this.state.image) === false) {
             Swal.fire({icon: 'error', title: 'Oops...', text: 'URL of image wrong.!'})
             return;
         }
+
 
         this
             .props
@@ -103,6 +115,15 @@ class AddContact extends Component {
                                 placeholder="URL Image only"
                                 value={this.state.image}
                                 onChange={(e) => this.setState({image: e.target.value})}/>
+                        </div>
+                        <div class="row">
+                            <label for="image">Job</label>
+                            <input
+                                type="text"
+                                name="job"
+                                placeholder="Job"
+                                value={this.state.job}
+                                onChange={(e) => this.setState({job: e.target.value})}/>
                         </div>
                         <div class="row">
                             <label for="image">Detail</label>

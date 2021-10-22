@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const ContactDetail = (props) => {
   console.log(props);
 
-  const { id,name, email, image, contact, detail } = props.location.state.contact;
+  const { id,name, email, image, contact, detail, job } = props.location.state.contact;
   return (
   <center>
     
@@ -12,9 +12,10 @@ const ContactDetail = (props) => {
     <img src={image} alt="" />
     <div className="card-body">
       <h4><h5>Uuid</h5> {id}</h4>
-      <h3><h5>Fullname</h5> {name}</h3>
-      <h3><h5>Email</h5>  {email}</h3>
-      <h3><h5>Contact</h5>{contact}</h3>
+      <h4><h5>Fullname</h5> {name}</h4>
+      <h4><h5>Job</h5>{job}</h4>
+      <h4><h5>Email</h5>  {email}</h4>
+      <h4><h5>Contact</h5>{contact}</h4>
       <p>
       <h5>Detail</h5>
        {detail}
