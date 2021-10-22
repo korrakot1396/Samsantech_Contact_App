@@ -1,5 +1,5 @@
 # Samsantech_Contact_App
-![](https://github.com/korrakot1396/Samsantech_Contact_App/blob/main/src/images/logo/logo_samsantech.png)
+![](https://github.com/korrakot1396/Samsantech_Contact_App/blob/main/src/images/logo/logo_mini.png.png)
 # organizer
 
 | nickname | full-name           | github username |
@@ -53,3 +53,6 @@ json-server -p 3006 -w db.json
 :heavy_check_mark: Galaxy Fold <br/>
 :heavy_check_mark: Nest Hub <br/>
 :heavy_check_mark: Nest Hub Max
+
+## Demo App
+
