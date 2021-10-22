@@ -1,5 +1,5 @@
 # Samsantech_Contact_App
-
+![](https://github.com/korrakot1396/Samsantech_Contact_App/blob/main/src/images/logo/logo_samsantech.png)
 # organizer
 
 | nickname | full-name           | github username |
