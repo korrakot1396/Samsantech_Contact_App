@@ -2,7 +2,7 @@
   "name": "secondapp",
   "version": "1.0.0",
   "engines": {
-    "node": "6.11.1"
+    "node": "16.10.0"
   },
   "private": true,
   "dependencies": {
