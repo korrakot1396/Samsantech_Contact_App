@@ -2,9 +2,9 @@
   "contacts": [
     {
       "id": "37a3c133-12ef-4ff3-8dbe-ef11eb302b27",
-      "name": "Num Dosan",
+      "name": "Test",
       "email": "nam.dosan@samsantech.com",
-      "image": "https://i.pinimg.com/564x/af/1f/e9/af1fe9b5cdd9418cd841ab72f9c2245d.jpg",
+      "image": "https://photos.hancinema.net/photos/fullsizephoto1277418.jpg",
       "detail": "Dosan is a software developer for samsantech.",
       "contact": "0987654321",
       "job": "Software Engineer"
@@ -53,6 +53,15 @@
       "detail": "Jung Sa Ha is UX/UI Designer for samsantech.",
       "contact": "0909876864",
       "job": "UX/UI Designer"
+    },
+    {
+      "id": "25bc3301-8f34-4954-9711-81be494b38c0",
+      "name": "Korrakot Triwichian",
+      "email": "korrakot.tr@samsantech.com",
+      "image": "https://thecinemaholic.com/wp-content/uploads/2020/10/961386ed1da949278ac1388c4a74a8b4.jpeg",
+      "contact": "987654318",
+      "detail": "this my friend.",
+      "job": "Frontend Dev"
     }
   ]
 }
